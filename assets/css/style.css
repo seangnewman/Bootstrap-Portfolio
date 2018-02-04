@@ -7,6 +7,7 @@ html{
     background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+     
   }
 h1, h2, h3, h4, h5, h6{
     font-family: 'Georgia', Times, Times New Roman, serif; 
@@ -22,12 +23,16 @@ h3{
 }
 
 body{
-    width: 100%;
+    width: 960px;
     height: auto;
     color:black;
     color:#777777;
     margin: 0 auto;
+    background-color: transparent;
+
  }
+
+ /*
  #headings{
      height: 4.25rem;
      background-color: whitesmoke;
@@ -64,7 +69,7 @@ body{
      text-align: center;
      font-size: 1.75rem;
   }
-
+/*
   nav{
     width:28.125%;
     float:left;
@@ -85,7 +90,7 @@ body{
       margin:0 .250rem 0 0;
   }
 
-  /* Main Section */
+  
 main{
     border-bottom: .5rem solid #4aaaa5;
     width:960px;
@@ -187,10 +192,7 @@ footer{
     top: 40%;
     opacity: 0.5rem;
 }
-/* *************************************** */
-/* Portfolio Page                          */
-/* *************************************** */
-
+ 
 .portfolioContainer{
     width: 95%;
     height: auto;
@@ -270,6 +272,7 @@ footer{
 /* slightly enhanced, universal clearfix hack */
 /* This hack was lifted from Nathan Smith */
 /*https://perishablepress.com/lessons-learned-concerning-the-clearfix-css-hack/ */
+/*
 .clearfix:after {
     visibility: hidden;
     display: block;
@@ -282,6 +285,7 @@ footer{
     display: inline-block; 
 }
 /* start commented backslash hack \\*/
+/*
 * html .clearfix { 
     height: 1%; 
 }
@@ -289,3 +293,245 @@ footer{
     display: block; 
 }
 /* close commented backslash hack */
+
+/*  Bootstrap Specific Styling */
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+#bootstrapNavigation{
+   
+   
+    height: 4.25rem;
+    background-color: whitesmoke;
+    width:960px;
+    border-bottom: .1rem solid #cccccc;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+.navbar-fixed-top{
+    z-index: 100;
+    background-color: #ffffff;
+}
+
+.navbar-default{
+    
+    width: 960px;
+    margin-left : 0;
+    padding: 0;
+    height: 4rem;
+    overflow: visible;
+    position:fixed;
+    top: 0;
+}
+
+
+.navbar-header{
+    background-color: #4aaaa5;
+    color:white;
+    width: 30%;
+    text-align: center;
+    height: 4.125rem;
+    float: left;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    font-weight: bold;
+}
+
+#brandTextContainer a {
+    color:whitesmoke;
+    text-align: center;
+    font-size:1.75rem;
+    font-family: 'Georgia', Times, Times New Roman, serif; 
+    
+ }
+
+
+.navbar-nav {
+    
+    flex-direction: row;
+    justify-content: flex-start;
+    width:30%;
+    
+}
+
+.navbar-nav li {
+    list-style: none;
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    font-size: 1.125rem;;
+}
+
+.navbar-nav li a {
+    color: #777777;
+    
+     
+}
+
+#mainContainer{
+    width: 960px;
+    
+    color:  #4aaaa5;
+    
+    
+    padding: 1rem;
+    border-bottom: .5rem solid #4aaaa5;
+    
+}
+#aboutMeSection{
+    margin:0;
+    padding: 0;
+    
+
+}
+#aboutMeColumn{
+  border-bottom: 1px solid #cccccc;
+padding-left:1rem;
+  width: 100%;
+   
+  background-color: white;
+  padding: 0 2rem 2rem 2rem;
+}
+
+#aboutMeColumn h2{
+  font-weight: bold;
+  margin-bottom: .5rem;
+  width: 100%;
+  font-size:1.5rem;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+}
+
+
+#columnBreak{
+    background-color: transparent;
+    width:5px;
+    
+    flex:0;
+}
+#socialMediaColumn{
+     
+    
+    width: 100%;
+    height: 25%;
+     
+    background-color: white;
+     
+    margin: 0 auto;
+    text-align: center;
+
+   
+    padding: 0 2rem 2rem 2rem;
+    
+     
+}
+
+
+
+#socialMediaHeader{
+      
+    
+    flex-shrink: 0;
+  
+    width: 100%;
+     
+    
+}
+
+#socialMediaColumn h3{
+    
+    padding-bottom: .5rem;
+    padding-bottom: .5rem;
+    text-align: center;
+    
+     
+    width:100%;
+    border-bottom: 1px solid #cccccc;
+}
+ 
+.btsrpImageContainer{
+    width: 50%;
+    height: 33%;
+    overflow: hidden;
+    padding: 0;
+    
+     
+}
+
+ 
+
+.btsrpImageContainer img{
+    margin: 0 auto;
+    height: 10rem;
+    width: 18rem;
+    transition: .5s ease-in;
+}
+
+.btsrpImageContainer img:hover{
+    height:20rem ;
+    width:auto;
+    transition: .5s ease-out;
+    overflow:visible;
+}
+
+
+.btsrpPortfolioLabelContainer{
+    width:90%;
+    position: relative;
+    background-color: #4aaaa5;
+    color:white;
+    bottom: 3rem;
+    height: 2rem;
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+.btsrpPortfolioLabelContainer p {
+    position: relative;
+    top: 0%;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+ 
+#socialMediaContainer{
+    width:100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+#smContainer img{
+    height: 3.5rem;
+    width:auto;
+    margin: .25rem;
+}
+
+
+footer{
+    background-color: #666666;
+    width:960px;
+    text-align: center;
+    font-size:.75rem;
+    color:whitesmoke;
+    height: 4rem;
+    margin: 0 auto;
+}
+
+#footerContainer{
+    width: 100%;
+    height: 100%;
+}
+#copyTag{
+    position: relative;
+    top: 40%;
+    opacity: 0.5rem;
+}
+ 
