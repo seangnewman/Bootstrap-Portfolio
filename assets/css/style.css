@@ -331,7 +331,7 @@ footer{
 .navbar-header{
     background-color: #4aaaa5;
     color:white;
-    width: 30%;
+    width: 35%;
     text-align: center;
     height: 4.125rem;
     float: left;
@@ -340,6 +340,7 @@ footer{
     justify-content: center;
    
     font-weight: bold;
+    border: 2px pink solid;
 }
 
 #brandTextContainer a {
@@ -347,15 +348,15 @@ footer{
     text-align: center;
     font-size:1.75rem;
     font-family: 'Georgia', Times, Times New Roman, serif; 
+     
     
  }
-
 
 .navbar-nav {
     
     flex-direction: row;
     justify-content: flex-start;
-    width:30%;
+    width:50%;
     
 }
 
@@ -381,6 +382,7 @@ footer{
     
     padding: 1rem;
     border-bottom: .5rem solid #4aaaa5;
+    
     
 }
 #aboutMeSection{
@@ -511,7 +513,7 @@ padding-left:1rem;
 #smContainer img{
     height: 3.5rem;
     width:auto;
-    margin: .25rem;
+    margin: .5rem;
 }
 
 
@@ -535,3 +537,28 @@ footer{
     opacity: 0.5rem;
 }
  
+
+.navbar-nav{
+    border:2px solid red;
+    float:right;
+    width: 50%;
+}
+
+#ulNav{
+    width:60%;
+    border: 2px blue dashed;
+    top:100%;
+     
+}
+
+#imageAboutContainer{
+    height: 5rem;
+    width: 5rem;
+    background-color: black;
+    background-image: url("https://media-exp2.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAgkAAAAJGFkNDI0NGU0LTg0ZWMtNGMxMy1hOTU0LWY0NjNhNzAyOTYyZQ.jpg");
+    background-size: contain;
+    float: left;
+    position: relative;
+    top:0;
+    margin: 0 1rem 0rem 0;
+}

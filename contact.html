@@ -1,89 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Contact Me!</title>
-        <link rel="stylesheet" type= "text/css" href="./assets/css/reset.css">
-        <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type= "text/css" href="./assets/css/style.css">
-    </head>
-    <body>
-        <section id="headings">
-            <header>
-                <div id="nameHighlight">
-                <h1>Sean Newman</h1>
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1" name=viewport>
+    <title>My Portfolio</title>
+    <!-- Define all Stylesheets supporting document -->
+    <link rel="stylesheet" type= "text/css" href="./assets/css/reset.css">
+    <!-- Link to stylesheet provided by BootStrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" type= "text/css" href="./assets/css/style.css">
+  </head>
+  <body>
+
+    <!-- Define document Navigation -->
+    <section  id="bootstrapNavigation" >
+      <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+        <div class="container">
+          <div class="navbar-header"> <!-- Branding Container -->
+            <div id="brandTextContainer">
+              <a class="navbar-brand" href="#">Sean Newman</a>
             </div>
-            </header>
-            <nav>
-                <ul id="siteNavigation">
-                        <li><a href="./index.html"><button id="about">About</button></a></li>
-                        <li><a href="./portfolio.html"><button id="portfolio">Portfolio</button></a></li>
-                        <li><a href="./contact.html"><button id="contact">Contact</button></a></li>
-                    </ul>
-            </nav>
-        </section>  <!-- End of Heading Section -->
-        <main class="clearfix">
-          <section id="aboutMe">
-              <div id="aboutMeContainer">
-                <header>
-                    <h2>Contact</h2>
-                </header>
-                
+          </div>  <!-- End the branding container -->
+          <div class="container" id="ulNav">
+          <ul class="nav navbar-nav">  <!-- Bootstrap Navbar navigation styling -->
+            <li><a href="#">About</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul> <!-- End navigation styling -->
+        </div> 
+        </div>
+      </nav>
+    </section> <!-- End Bootstrap navigation -->
+
+    <!-- Define main content   Defining as one row with three columns-->
+    <main class="container" id="mainContainer">
+      <article class="row">  <!-- Defining the one row of the main section -->
+        <section class="col-lg-8 col-md-12 col-sm-12 col-xs-12" id="aboutMeSection">  <!-- On small/xsmall viewports the column will span viewport -->
+          <div id="aboutMeColumn">
+            <h2>Contact</h2>
+              <!-- Create a container to hold the form -->
+              <div class="container">
                 <div class="emailContainer">
-                    <div class="emailFormContainer">
-                            <form action="mailto:seangnewman@yahoo.com" method="post" enctype="text/plain">
-                                 
-                                    <label for="FullName">Name</label>
-                                    <input type="text" id="fname" name="FullName" placeholder="Your name..">
-                              
-                             
-                                    <label for="email">Email</label>
-                                    <input type="text" id="email" name="Email" placeholder="example@gmail.com">
-                               
-                               
-                                
-                                    <label id ="emailMessage"for="Message">Message</label>
-                                    <textarea id="Message" name="Message" placeholder="Your message.." style="height:200px"></textarea>
-                                
-                                    <input id="emailSubmit" type="submit" value="Submit">
-                                
-                                  </form>
-                    
-                    </div>
-
-                
+                  <div class="emailFormContainer">
+                    <form action="mailto:seangnewman@yahoo.com" method="post" enctype="text/plain">
+                      <label for="FullName">Name</label>
+                      <input type="text" id="fname" name="FullName" placeholder="Your name..">
+                      <label for="email">Email</label>
+                      <input type="text" id="email" name="Email" placeholder="example@gmail.com">
+                      <label id ="emailMessage"for="Message">Message</label>
+                      <textarea id="Message" name="Message" placeholder="Your message.." style="height:200px"></textarea>
+                      <input id="emailSubmit" type="submit" value="Submit">
+                    </form>
+                  </div>
                 </div>
-               
-            
-            
-         </section>
-            <aside>
-               <div id="connectWithMeContainer">
-                 <h3>Connect with Me</h3>
-                 <div id="socialMediaContainer">
-                    <div id="smContainer"><a href="https://github.com/seangnewman" target="_blank">
-                        <img src="./assets/images/github.png" alt="github">
-                    </a></div>
-                    <div id="smContainer"><a href="https://www.linkedin.com/in/sean-newman-0a78803b/" target="_blank">                    
-                            <img src="./assets/images/linkedin.png" alt="LinkedIn">
-                        </a></div>
-                    <div id="smContainer">  <a href="https://stackoverflow.com/users/9173182/sean" target="_blank">                 
-                            <img src="./assets/images/stackoverflow.png" alt="StackOverflow">
-                        </a></div>
-                </div>
-               </div> 
-            </aside>
-        </main>
-        <section>
-            <footer>
-                
-                       <span id="copyTag">Copyright &copy; 2018 Sean Newman</span> 
-               
-                
-            </footer>
-            
+              </div>  <!-- End of Container -->
+            </div>  
+        </section>  <!-- End of About Me Column -->
 
+        <!-- Second column represents the break between aboutMe and socialMedia columns -->
+        <section class="col-md-1 col-sm-12 col-xs-12" id="columnBreak">
+          <div><!-- No Content --></div>
+        </section> <!-- End of column break -->
+
+        <!-- Third column represents the social media contacts -->
+        <section class="col-lg-3 col-md-12 col-sm-12 col-xs-12" id="socialMediaColumn">
+          <div id ="socialMediaHeader" class="container">
+            <h3>Connect with Me</h3>
+            <!-- Social Media icons in three columns -->
+            <div class="row" id="socialMediaIcons">
+              <div class="col-md-4 col-sm-12 col-xs-12">
+                <div id="smContainer">
+                  <a href="https://github.com/seangnewman" target="_blank">
+                    <img src="./assets/images/github.png" alt="github">
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-12 col-xs-12">
+                <div id="smContainer">
+                  <a href="https://www.linkedin.com/in/sean-newman-0a78803b/" target="_blank">                    
+                    <img src="./assets/images/linkedin.png" alt="LinkedIn">
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-12 col-xs-12">
+                <div id="smContainer">  
+                  <a href="https://stackoverflow.com/users/9173182/sean" target="_blank">                 
+                    <img src="./assets/images/stackoverflow.png" alt="StackOverflow">
+                  </a>
+               </div>
+              </div>
+            </div>
+          </div>
         </section>
-    </body>
+      </article>
+    </main>
+    <!-- Final Row to hold footer -->
+      <section>
+        <footer class="footer">
+          <div class="container" id="footerContainer">
+            <span   id="copyTag">Copyright &copy; 2018 Sean Newman</span> 
+          </div>
+        </footer>
+      </section>
+      <!-- Link to javascript to support BootStrap styling -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>        <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+  </body>
 </html>
