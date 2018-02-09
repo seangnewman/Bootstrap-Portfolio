@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Define all Stylesheets supporting document -->
+  <link rel="stylesheet" type= "text/css" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <!-- Custom Stylesheet -->
+   <link rel="stylesheet" type= "text/css" href="./assets/css/style.css">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+   
+</head>
+<body>
+  <main >  <!-- Beginning of main section -->
+    <header>
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-default " id="theNavBar">
+            <div class="container-fluid">
+              <div class="navbar-header navbar-static-top">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="#">
+                    <h1>Sean Newman</h1>  
+                </a>
+              </div>
+              <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">About</a></li>
+                  
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">Contacts</a></li>
+                </ul>
+        
+              </div>
+            </div>
+          </nav>       
+         </header>   
+
+           
+    <!-- Define main content   Defining as one row with three columns-->
+    <div class="container-fluid" id="mainContainer">
+            <article class="row">  <!-- Defining the one row of the main section -->
+              <section class="col-lg-8 col-md-12 col-sm-12 col-xs-12" id="aboutMeSection">  <!-- On small/xsmall viewports the column will span viewport -->
+                <div id="aboutMeColumn">
+                  <h2>Portfolio</h2>
+                    <!-- Create a container to hold the portfolio -->
+                    <div class="container">
+                      <!-- Within the container, create three rows to hold the portolio images -->
+                      <!-- Beginning of Row 1 -->
+                      <div class="row ">
+                        <!-- Each row contains two columns -->
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 btsrpImageContainer">
+                          <a href="https://seangnewman.github.io/Codecademy-PYTDanceStudio/" target="_blank">
+                            <img src="./assets/images/PYT.PNG" alt="PYT Dance Studio">
+                          </a>
+                          <div class="btsrpPortfolioLabelContainer">
+                            <p>PYT Dance Studio</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 btsrpImageContainer">
+                          <a href="https://github.com/seangnewman/Codecademy-jammming" target="_blank">
+                            <img src="./assets/images/jammming.PNG" alt="Spotify Clone">
+                          </a>
+                          <div class="btsrpPortfolioLabelContainer">
+                            <p>React:Spotify Clone</p>
+                          </div>
+                        </div>
+                      </div>  <!-- End of Row 1 -->
+                      <!-- Beginning of Row 2 -->
+                       <div class="row ">
+                       <!-- Each row contains two columns -->
+                         <div class="col-lg-6 col-md-12  col-sm-12 col-xs-12 btsrpImageContainer">
+                           <a href="https://github.com/seangnewman/PersonalDevelopment/tree/PersonalDevelopment/Udemy/Complete_JavaScript_Course/Budgety" target="_blank">
+                             <img src="./assets/images/Budgety.PNG" alt="Budget Calculator">
+                           </a>
+                           <div class="btsrpPortfolioLabelContainer">
+                           <p>Budget Calculator</p>
+                           </div>
+                         </div>
+                         <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 btsrpImageContainer">
+                         <a href="https://github.com/seangnewman/Udemy-MyShopClone" target="_blank">
+                           <img src="./assets/images/MVC.PNG" alt="Product Catalog">
+                         </a>
+                         <div class="btsrpPortfolioLabelContainer">
+                           <p>ASP Product Catalog</p>
+                          </div>
+                         </div>
+                       </div>  <!-- End of Row 2 -->
+                       <!-- Beginning of Row 3 -->
+                       <div class="row ">
+                         <!-- Each row contains two columns -->
+                         <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 btsrpImageContainer">
+                            <a href="https://github.com/seangnewman/PersonalDevelopment/tree/PersonalDevelopment/FreeCodeCamp/Quotes" target="_blank">
+                              <img src="./assets/images/Quote.PNG" alt="Quote Machine">
+                            </a>
+                            <div class="btsrpPortfolioLabelContainer">
+                              <p>Random Quote Machine</p>
+                            </div>
+                          </div>
+                         <div class="col-lg-6 col-md-12 col-md-12 col-sm-12 col-xs-12 btsrpImageContainer">
+                              <a href="https://github.com/seangnewman/PersonalDevelopment/tree/PersonalDevelopment/FreeCodeCamp/WikipediaViewer" target="_blank">
+                              </a>
+                            <img src="./assets/images/Wiki.PNG" alt="Wiki Viewer"> 
+                         </a>
+                         <div class="btsrpPortfolioLabelContainer">
+                           <p>Wikipedia Viewer</p>
+                         </div>
+                       </div>
+                      </div>  <!-- End of Row 3 -->
+                    </div>  <!-- End of Container -->
+                </div>  
+          </section>  <!-- End of About Me Column -->
+      
+              <!-- Second column represents the break between aboutMe and socialMedia columns -->
+              <section class="col-md-1 col-sm-12 col-xs-12" id="columnBreak">
+                <div><!-- No Content --></div>
+              </section> <!-- End of column break -->
+      
+              <!-- Third column represents the social media contacts -->
+              <section class="col-lg-3 col-md-12 col-sm-12 col-xs-12" id="socialMediaColumn">
+                <div id ="socialMediaHeader" class="container">
+                  <h3>Connect with Me</h3>
+                  <!-- Social Media icons in three columns -->
+                  <div class="row" id="socialMediaIcons">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                      <div id="smContainer">
+                        <a href="https://github.com/seangnewman" target="_blank">
+                          <img src="./assets/images/github.png" alt="github">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                      <div id="smContainer">
+                        <a href="https://www.linkedin.com/in/sean-newman-0a78803b/" target="_blank">                    
+                          <img src="./assets/images/linkedin.png" alt="LinkedIn">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                      <div id="smContainer">  
+                        <a href="https://stackoverflow.com/users/9173182/sean" target="_blank">                 
+                          <img src="./assets/images/stackoverflow.png" alt="StackOverflow">
+                        </a>
+                     </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </article>
+        </div>
+
+        <section>
+                <footer class="footer">
+                  <div class="container" id="footerContainer">
+                    <span   id="copyTag">Copyright &copy; 2018 Sean Newman</span> 
+                  </div>
+        </footer>
+        </section>
+      
+       <!-- Final Row to hold footer -->
+     
+ 
+
+    </main>
+    <!-- End of Main Section -->
+    <!-- Scripts used to support document -->
+ 
+  </body>
+</html>

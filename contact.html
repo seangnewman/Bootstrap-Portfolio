@@ -9,100 +9,40 @@
     <!-- Link to stylesheet provided by BootStrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Custom Stylesheet -->
-    <link rel="stylesheet" type= "text/css" href="./assets/css/style.css">
+  <!--  <link rel="stylesheet" type= "text/css" href="./assets/css/style.css">  -->
   </head>
   <body>
-
-    <!-- Define document Navigation -->
-    <section  id="bootstrapNavigation" >
-      <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
-        <div class="container">
-          <div class="navbar-header"> <!-- Branding Container -->
-            <div id="brandTextContainer">
-              <a class="navbar-brand" href="#">Sean Newman</a>
-            </div>
-          </div>  <!-- End the branding container -->
-          <div class="container" id="ulNav">
-          <ul class="nav navbar-nav">  <!-- Bootstrap Navbar navigation styling -->
-            <li><a href="#">About</a></li>
-            <li><a href="portfolio.html" class="active">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul> <!-- End navigation styling -->
-        </div> 
+<header>
+       
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">WebSiteName</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Page 1</a></li>
+              <li><a href="#">Page 2</a></li>
+              <li><a href="#">Page 3</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+          </div>
         </div>
-      </nav>
-    </section> <!-- End Bootstrap navigation -->
+      </nav> 
+                  
+        </header>
+        
 
-    <!-- Define main content   Defining as one row with three columns-->
-    <main class="container" id="mainContainer">
-      <article class="row">  <!-- Defining the one row of the main section -->
-        <section class="col-lg-8 col-md-12 col-sm-12 col-xs-12" id="aboutMeSection">  <!-- On small/xsmall viewports the column will span viewport -->
-          <div id="aboutMeColumn">
-            <h2>Contact</h2>
-              <!-- Create a container to hold the form -->
-              <div class="container">
-                <div class="emailContainer">
-                  <div class="emailFormContainer">
-                    <form action="mailto:seangnewman@yahoo.com" method="post" enctype="text/plain">
-                      <label for="FullName">Name</label>
-                      <input type="text" id="fname" name="FullName" placeholder="Your name..">
-                      <label for="email">Email</label>
-                      <input type="text" id="email" name="Email" placeholder="example@gmail.com">
-                      <label id ="emailMessage"for="Message">Message</label>
-                      <textarea id="Message" name="Message" placeholder="Your message.." style="height:200px"></textarea>
-                      <input id="emailSubmit" type="submit" value="Submit">
-                    </form>
-                  </div>
-                </div>
-              </div>  <!-- End of Container -->
-            </div>  
-        </section>  <!-- End of About Me Column -->
-
-        <!-- Second column represents the break between aboutMe and socialMedia columns -->
-        <section class="col-md-1 col-sm-12 col-xs-12" id="columnBreak">
-          <div><!-- No Content --></div>
-        </section> <!-- End of column break -->
-
-        <!-- Third column represents the social media contacts -->
-        <section class="col-lg-3 col-md-12 col-sm-12 col-xs-12" id="socialMediaColumn">
-          <div id ="socialMediaHeader" class="container">
-            <h3>Connect with Me</h3>
-            <!-- Social Media icons in three columns -->
-            <div class="row" id="socialMediaIcons">
-              <div class="col-md-4 col-sm-12 col-xs-12">
-                <div id="smContainer">
-                  <a href="https://github.com/seangnewman" target="_blank">
-                    <img src="./assets/images/github.png" alt="github">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-12 col-xs-12">
-                <div id="smContainer">
-                  <a href="https://www.linkedin.com/in/sean-newman-0a78803b/" target="_blank">                    
-                    <img src="./assets/images/linkedin.png" alt="LinkedIn">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-12 col-xs-12">
-                <div id="smContainer">  
-                  <a href="https://stackoverflow.com/users/9173182/sean" target="_blank">                 
-                    <img src="./assets/images/stackoverflow.png" alt="StackOverflow">
-                  </a>
-               </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </article>
-    </main>
-    <!-- Final Row to hold footer -->
-      <section>
-        <footer class="footer">
-          <div class="container" id="footerContainer">
-            <span   id="copyTag">Copyright &copy; 2018 Sean Newman</span> 
-          </div>
-        </footer>
-      </section>
+ 
       <!-- Link to javascript to support BootStrap styling -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>        <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
   </body>

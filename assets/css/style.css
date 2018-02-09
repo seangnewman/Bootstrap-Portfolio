@@ -2,402 +2,109 @@ html{
     background-color: black;
     width: 100%;
     font-size: 16px;
-    /*font-family: 'Oxygen', sans-serif;*/
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-     
   }
+
+
+  /* Define the settings for the Headings*/
 h1, h2, h3, h4, h5, h6{
     font-family: 'Georgia', Times, Times New Roman, serif; 
 }
+
 h1{
     font-size: 1.5rem;
 }
 h2{
     font-size:1.375rem;
 }
-h3{
+  h3{
     font-size: 1.25rem;
 }
 
-body{
-    width: 960px;
-    height: auto;
-    color:black;
-    color:#777777;
-    margin: 0 auto;
-    background-color: transparent;
-
- }
-
- /*
- #headings{
-     height: 4.25rem;
-     background-color: whitesmoke;
-     width:960px;
-     border-bottom: .1rem solid #cccccc;
-     margin: 0 auto;
- }
-
- #about, #portfolio, #contact {
-    background-color:transparent;
-    border: none;
-    color:#777777;
-    padding: .25rem .5rem;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
- }
- 
- header{
-     width:71.850%;
-     float:left;
- }
- 
- #nameHighlight{
-    background-color: #4aaaa5;
-    width:40%;
-    float:left;
-    font-weight: bold;
- }
- 
- header h1{
-     color:#ffffff;
-     margin: 1.25rem 0 1.25rem 0;
-     text-align: center;
-     font-size: 1.75rem;
+/* Define text color for body as color:#777777;
+   Set background to transparent to allow the background through
+   */
+  body{
+      background: transparent;
+      width:100%;
+      color:#777777;
+      
   }
-/*
-  nav{
-    width:28.125%;
-    float:left;
-    text-align: left;
-    font-size: 1.125rem;
-    padding: 0;
-    margin-top:1.25rem;
-}
- 
-#siteNavigation li{
-   list-style: none;
-   display: inline-block;
-   margin: .125rem .125rem .125rem 0;
-  }
-
-  button{
-      font-size: 1.125rem;
-      margin:0 .250rem 0 0;
-  }
-
-  
+/* Set the maximum width to 960 to allow Bootstrap behavor on collapsable navbar */
 main{
-    border-bottom: .5rem solid #4aaaa5;
-    width:960px;
-    margin: 0 auto;
-}
-
-#aboutMe{
-    margin: 1rem 1.20rem 1rem 0rem;
-    width: 40.625rem;
-    border:.1rem solid #FFFFFF;
-    background-color: #ffffff;
-    float:left;
-    overflow: hidden;
-}
-
-#aboutMeContainer{
-    margin: 1rem;
-    height: auto;
-    max-width:650px;
- }
-
-#aboutMeContainer header{
-    color:#4DA8A3;
-    border-bottom: .15rem solid #dddddd ;
-    width: 100%;
-    padding-bottom: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-#aboutMeContainer header h2{
-    font-weight: bold;
-    margin-bottom: .25rem;
-  }
-
-#imageContainer{
-    height: 5rem;
-    width: 5rem;
-    background-color: black;
-    background-image: url("https://media-exp2.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAgkAAAAJGFkNDI0NGU0LTg0ZWMtNGMxMy1hOTU0LWY0NjNhNzAyOTYyZQ.jpg");
-    background-size: contain;
-    float: left;
-    position: relative;
-    top:0;
-    margin: 0 1rem 0rem 0;
-}
-
-
-#aboutMeContent p{
-    font-size: 1rem;
-    margin : 0.5rem;
+   
+  margin:0 auto;
+   
 }
  
-aside{
-    margin: 1rem 0 0 1rem;
-    width:16.875rem;
-    height:8.425rem;
-    border:.1rem solid #FFFFFF;
-    background-color: #ffffff;
-    float:left;
-}
 
-#connectWithMeContainer {
-    width: 100%;
-    color: #4DA8A3;
-    text-align: center;
-}
-
-#connectWithMeContainer h3{
-    padding-bottom: 0.5rem;
-    border-bottom: .15rem solid #e9e7e7 ;
-    margin-bottom: 0.5rem;
-}
-
-#socialMediaContainer{
-    width:100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-}
-
-#smContainer img{
-    height: 3.5rem;
-    width:auto;
-    margin: .25rem;
-}
-
-footer{
-    background-color: #666666;
-    width:960px;
-    text-align: center;
-    font-size:.75rem;
-    color:whitesmoke;
-    height: 4rem;
-    margin: 0 auto;
+.navbar{
+     height: 4.25rem; 
+     background-color: whitesmoke;
+     max-width:960px;
+     border-bottom: .1rem solid #cccccc;
+      
 }
  
-#copyTag{
-    position: relative;
-    top: 40%;
-    opacity: 0.5rem;
-}
- 
-.portfolioContainer{
-    width: 95%;
-    height: auto;
-    float: left;
-    display: flex;
-    justify-content: space-between;
-}
-
-.portfolioImageContainer{
-    width: 45%;
-    height: 33%;
-    float:left;
-    overflow: hidden;
-    margin: 0 .5rem .5rem 0.5rem;
-}
-
-.portfolioImageContainer img{
-    margin: 0 auto;
-    height: 10rem;
-    width: auto;
-    transition: .5s ease-in;
-}
-
-.portfolioImageContainer img:hover{
-    height:20rem ;
-    width:auto;
-    transition: .5s ease-out;
-    overflow:visible;
-}
-
-.portfolioLabelContainer{
-    width:100%;
-    position: relative;
+.navbar-brand{
     background-color: #4aaaa5;
-    color:white;
-    bottom: 3rem;
-    height: 1.5rem;
-    text-align: center;
-}
-
-.portfolioLabelContainer p {
-    position: relative;
-    top: 15%;
-    font-style: italic;
-    font-weight: bold;
-}
-
-/* *************************************** */
-/* Contact Page                          */
-/* *************************************** */
-
- form label{
-     width: 90%;
-     display:block;
-     margin: 1rem 1rem .25rem 0;
-     font-weight: bold;
-     opacity: .45;
- }
-
- input, textarea{
-     width:90%;
-     display:block;
-     opacity: .45;
- }
-
-#emailSubmit{
-    width: 20%;
-    margin: 1rem 0 0 0;
-    padding: .25rem 0 .25rem 0;
-    color:white;
-    background-color: #4aaaa5;
-    font-weight: bold;
-    opacity: .9;
-} 
-
-
-/* slightly enhanced, universal clearfix hack */
-/* This hack was lifted from Nathan Smith */
-/*https://perishablepress.com/lessons-learned-concerning-the-clearfix-css-hack/ */
-/*
-.clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-}
-.clearfix { 
-    display: inline-block; 
-}
-/* start commented backslash hack \\*/
-/*
-* html .clearfix { 
-    height: 1%; 
-}
-.clearfix { 
-    display: block; 
-}
-/* close commented backslash hack */
-
-/*  Bootstrap Specific Styling */
-
-.container-fluid{
-    margin: 0;
-    padding: 0;
-}
-#bootstrapNavigation{
-   
-   
-    height: 4.25rem;
-    background-color: whitesmoke;
-    width:960px;
-    border-bottom: .1rem solid #cccccc;
-    margin: 0 auto;
-    padding: 0;
-    
-}
-.navbar-fixed-top{
-    z-index: 100;
-    background-color: #ffffff;
-}
-
-.navbar-default{
-    
-    width: 960px;
-    margin-left : 0;
-    padding: 0;
-    height: 4rem;
-    overflow: visible;
-    position:fixed;
-    top: 0;
-}
-
-
-.navbar-header{
-    background-color: #4aaaa5;
-    color:white;
-    width: 35%;
-    text-align: center;
-    height: 4.125rem;
-    float: left;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-   
-    font-weight: bold;
-    border: 2px pink solid;
-}
-
-#brandTextContainer a {
-    color:whitesmoke;
-    text-align: center;
-    font-size:1.75rem;
-    font-family: 'Georgia', Times, Times New Roman, serif; 
      
-    
+     
+    font-weight: bold;
  }
 
-.navbar-nav {
-    
-    flex-direction: row;
-    justify-content: flex-start;
-    width:50%;
-    
+#theNavBar {
+   margin: 0 auto;
 }
 
-.navbar-nav li {
-    list-style: none;
-    display: inline-block;
-    width: 33%;
-    text-align: center;
-    font-size: 1.125rem;;
-}
 
-.navbar-nav li a {
-    color: #777777;
-    
+ .navbar-default .navbar-brand {
+    color: white;
+    height: 4.05rem;
      
 }
+  
+h1{
+    color:#ffffff;
+    margin: .25rem 0 .25rem 0;
+    text-align: center;
+    font-size: 1.75rem;
+     
+ }
 
-#mainContainer{
-    width: 960px;
-    
-    color:  #4aaaa5;
-    
-    
-    padding: 1rem;
-    border-bottom: .5rem solid #4aaaa5;
-    
-    
-}
-#aboutMeSection{
-    margin:0;
-    padding: 0;
-    
+ .navbar-nav{
+     margin-top: .5rem;
+      
+ }
 
-}
+ ul li a{
+     border-radius: 10px;
+ }
+
+
+ #mainContainer{
+        border-bottom: .5rem solid #4aaaa5;
+        max-width: 960px;
+       border: 2px solid red;
+        padding: -200px;
+      
+   
+ }
+
+
+ 
+ 
 #aboutMeColumn{
   border-bottom: 1px solid #cccccc;
-padding-left:1rem;
+  
   width: 100%;
-   
   background-color: white;
-  padding: 0 2rem 2rem 2rem;
+  padding: 0 0 0 2rem;
+  margin-lef: 0;
+   
 }
 
 #aboutMeColumn h2{
@@ -409,70 +116,21 @@ padding-left:1rem;
   padding-bottom: .5rem;
   padding-top: .5rem;
 }
-
-
-#columnBreak{
-    background-color: transparent;
-    width:5px;
-    
-    flex:0;
-}
-#socialMediaColumn{
-     
-    
-    width: 100%;
-    height: 25%;
-     
-    background-color: white;
-     
-    margin: 0 auto;
-    text-align: center;
-
-   
-    padding: 0 2rem 2rem 2rem;
-    
-     
-}
-
-
-
-#socialMediaHeader{
-      
-    
-    flex-shrink: 0;
-  
-    width: 100%;
-     
-    
-}
-
-#socialMediaColumn h3{
-    
-    padding-bottom: .5rem;
-    padding-bottom: .5rem;
-    text-align: center;
-    
-     
-    width:100%;
-    border-bottom: 1px solid #cccccc;
-}
  
 .btsrpImageContainer{
     width: 50%;
     height: 33%;
     overflow: hidden;
     padding: 0;
-    
-     
 }
 
  
-
 .btsrpImageContainer img{
     margin: 0 auto;
     height: 10rem;
-    width: 18rem;
+    width: 15rem;
     transition: .5s ease-in;
+     
 }
 
 .btsrpImageContainer img:hover{
@@ -480,11 +138,12 @@ padding-left:1rem;
     width:auto;
     transition: .5s ease-out;
     overflow:visible;
+     
 }
 
 
 .btsrpPortfolioLabelContainer{
-    width:90%;
+    width:95%;
     position: relative;
     background-color: #4aaaa5;
     color:white;
@@ -502,6 +161,50 @@ padding-left:1rem;
     font-weight: bold;
     
 }
+
+
+
+#columnBreak{
+    background-color: transparent;
+    width:5px;
+    
+    flex:0;
+    color: 20px red dashed;
+}
+#socialMediaColumn{
+     
+     
+    min-width: 30%;
+    height: 25%;
+     
+    background-color: white;
+     
+    margin-top: 1rem;
+    text-align: center;
+
+   
+    padding: 0 2rem 2rem 2rem;
+    
+     
+}
+
+
+
+#socialMediaHeader{
+     
+    width: 100%;
+  }
+
+#socialMediaColumn h3{
+    padding-bottom: .5rem;
+    
+    text-align: center;
+    
+     
+    width:100%;
+    border-bottom: 1px solid #cccccc;
+}
+
  
 #socialMediaContainer{
     width:100%;
@@ -519,7 +222,7 @@ padding-left:1rem;
 
 footer{
     background-color: #666666;
-    width:960px;
+    max-width:960px;
     text-align: center;
     font-size:.75rem;
     color:whitesmoke;
@@ -536,29 +239,8 @@ footer{
     top: 40%;
     opacity: 0.5rem;
 }
- 
 
-.navbar-nav{
-    border:2px solid red;
-    float:right;
-    width: 50%;
-}
 
-#ulNav{
-    width:60%;
-    border: 2px blue dashed;
-    top:100%;
-     
-}
-
-#imageAboutContainer{
-    height: 5rem;
-    width: 5rem;
-    background-color: black;
-    background-image: url("https://media-exp2.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAgkAAAAJGFkNDI0NGU0LTg0ZWMtNGMxMy1hOTU0LWY0NjNhNzAyOTYyZQ.jpg");
-    background-size: contain;
-    float: left;
-    position: relative;
-    top:0;
-    margin: 0 1rem 0rem 0;
-}
+nav.navbar.open {
+    margin-bottom: 120px;
+  }
