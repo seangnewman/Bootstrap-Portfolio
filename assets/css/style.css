@@ -40,6 +40,9 @@ main{
    
 }
  
+header{
+    margin-top: 2rem;
+}
 
 .navbar{
      height: 4.25rem; 
@@ -88,10 +91,8 @@ h1{
  #mainContainer{
         border-bottom: .5rem solid #4aaaa5;
         max-width: 960px;
-       border: 2px solid red;
-        padding: -200px;
-      
-   
+        margin-top: 2rem;
+         
  }
 
 
@@ -103,8 +104,13 @@ h1{
   width: 100%;
   background-color: white;
   padding: 0 0 0 2rem;
-  margin-lef: 0;
+  margin-left: 0;
+  
    
+}
+
+#aboutMeContainer{
+    width: 100%;
 }
 
 #aboutMeColumn h2{
@@ -116,12 +122,15 @@ h1{
   padding-bottom: .5rem;
   padding-top: .5rem;
 }
+  
  
+
 .btsrpImageContainer{
-    width: 50%;
+    
     height: 33%;
     overflow: hidden;
     padding: 0;
+    
 }
 
  
@@ -138,12 +147,13 @@ h1{
     width:auto;
     transition: .5s ease-out;
     overflow:visible;
+    
      
 }
 
 
 .btsrpPortfolioLabelContainer{
-    width:95%;
+    width:20%;
     position: relative;
     background-color: #4aaaa5;
     color:white;
@@ -239,8 +249,3 @@ footer{
     top: 40%;
     opacity: 0.5rem;
 }
-
-
-nav.navbar.open {
-    margin-bottom: 120px;
-  }
